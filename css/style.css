@@ -181,8 +181,7 @@ select::-ms-expand {
 .header__image {
   width: 100%;
   aspect-ratio: 126/64;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 768px) {
   .header__image {
