@@ -1,7 +1,7 @@
 @use "sass:math";
 // 文字フォントの種類
-$base-font: "";
-$second-font: "";
+$base-font: "Inter", sans-serif;
+$second-font: "bananaslip_plus", sans-serif;
 $third-font: "";
 
 // 文字の太さ
@@ -9,3 +9,9 @@ $regular: 300;
 $normal: 400;
 $medium: 500;
 $bold: 700;
+
+
+@font-face {
+  font-family: "bananaslip_plus";
+  src: url("/fonts/YDWbananaslipplus.otf") format("opentype");
+}
