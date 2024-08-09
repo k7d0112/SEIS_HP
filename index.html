@@ -2,27 +2,29 @@
 <html lang="ja">
 
 <head>
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="index">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="format-detection" content="telephone=no">
   <!-- meta情報 -->
-  <title>タイトル</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>株式会社SEIS</title>
+  <meta name="description" content="株式会社SEISのホームページになります。">
+  <meta name="keywords" content="webサイト, HP">
   <!-- ogp -->
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
+  <meta property="og:title" content="株式会社SEIS">
+  <meta property="og:type" content="webサイト">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-  <meta property="og:site_name" content="">
-  <meta property="og:description" content="">
+  <meta property="og:site_name" content="株式会社SEIS">
+  <meta property="og:description" content="株式会社SEISのホームページになります。">
   <meta name="twitter:card" content="summary">
   <!-- ファビコン -->
   <link rel="icon" href="/images/favicon.ico">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" sizes="180x180">
   <!-- Google Fonts -->
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <!-- css -->
   <link rel="stylesheet" href="/css/style.css">
 
@@ -32,11 +34,108 @@
 </head>
 
 <body>
-  <header class="header"></header>
+  <header class="header js-header">
+    <div class="header__inner">
+      <h1 class="header__title">
+        <img src="images/logo-sp.png" alt="株式会社SEIS" class="header__image">
+      </h1>
+      <nav class="header__nav md-none">
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">HOME</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#message" class="header__nav-link">Message</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#service" class="header__nav-link">Service</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#profile" class="header__nav-link">Profile</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-  <main></main>
+    <div class="hamburger js-hamburger md-show">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-  <footer class="footer"></footer>
+    <div class="drawer js-drawer">
+      <ul class="drawer__list">
+        <li class="drawer__item">
+          <a href="#" class="drawer__link">HOME</a>
+        </li>
+        <li class="drawer__item">
+          <a href="#message" class="drawer__link">Message</a>
+        </li>
+        <li class="drawer__item">
+          <a href="#service" class="drawer__link">Service</a>
+        </li>
+        <li class="drawer__item">
+          <a href="#profile" class="drawer__link">Profile</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- fv -->
+    <div class="fv">
+      <h2 class="fv__title">SEIS</h2>
+    </div>
+
+    <!-- message -->
+    <section class="message" id="message">
+      <div class="message__inner">
+        <h2 class="message__title section__title">Message</h2>
+        <h3 class="message__subtitle">”未来を共に創るパートナーシップ”</h3>
+        <p class="message__text section__text">
+          私たちは、最先端の技術と経営視点を融合させ、顧客のビジネスを革新します。新たな価値を創出し、持続可能な成長を実現します。お客様と共に未来を切り拓くパートナーとして、常に最適なソリューションを提供します。
+        </p>
+      </div>
+    </section>
+
+    <!-- service -->
+    <section class="service" id="service">
+      <div class="service__inner">
+        <h2 class="service__title section__title">Service</h2>
+        <p class="service__text section__text">どんなサービス中心ここに書きます。</p>
+        <ul class="service__list">
+          <li class="service__item">
+            <img src="images/service1.png" alt="ITコンサルの画像" class="service__image">
+            <p class="service__text">ITコンサル</p>
+          </li>
+          <li class="service__item">
+            <img src="images/service2.png" alt="プロジェクトマネジメントの画像" class="service__image">
+            <p class="service__text">プロジェクト<br class="lg-none">マネジメント</p>
+          </li>
+          <li class="service__item">
+            <img src="images/service3.png" alt="システム開発の画像" class="service__image">
+            <p class="service__text">システム開発</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- profile -->
+    <section class="profile" id="profile">
+      <div class="profile__inner">
+        <div class="profile__heading">
+          <h2 class="profile__title section__title">Profile</h2>
+          <p class="profile__text section__text">お気軽にお問い合わせください。</p>
+        </div>
+        <div class="profile__info">
+          <p class="profile__name">株式会社SEIS</p>
+          <p class="profile__english">(SEIS Co.Ltd.)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- <footer class="footer"></footer> -->
 
 </body>
 
