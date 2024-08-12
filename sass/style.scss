@@ -6,6 +6,7 @@
   width: 100%;
   height: 64px;
   background: $white;
+  z-index:10px;
   @include mq('md'){
     height: 54px;
   }
@@ -135,12 +136,44 @@
   position: relative;
   width: 100%;
   height: 663px;
-  background-image: url(../images/FV-pc.jpg);
-  background-repeat:no-repeat;
-  background-size:cover;
+  // background-image: url(../images/FV-pc.jpg);
+  // background-repeat:no-repeat;
+  // background-size:cover;
+  background: linear-gradient(45deg, #1B9195, #0DA654, #F1F6D8);
+  background-size: 200% 200%;
+  animation: bggradient 10s ease infinite;
   @include mq('md'){
     height: 551px;
-    background-image: url(../images/FV-sp.jpg);
+    // background-image: url(../images/FV-sp.jpg);
+  }
+}
+
+@keyframes bggradient {
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+
+.fv__image {
+  max-width: 900px;
+  height: auto;
+  position: absolute;
+  right:0px;
+  bottom: -50px;
+  @include mq('lg'){
+    max-width: 600px;
+    bottom: 150px;
+  }
+  @include mq('md'){
+    max-width: 400px;
+    right: -20px;
+    bottom: 220px;
   }
 }
 
@@ -151,6 +184,9 @@
   position: absolute;
   top: 211px;
   left: 109px;
+  @include mq('lg'){
+    left: 40px;
+  }
   @include mq('md'){
     font-size: 80px;
     top: 220px;
