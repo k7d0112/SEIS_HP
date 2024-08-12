@@ -170,6 +170,7 @@
   max-width: 692px;
   margin-inline:auto;
   padding: 0 24px;
+  opacity:0;
 }
 
 .message__title {
@@ -208,6 +209,7 @@
   padding: 0 20px;
   max-width: 909px;
   margin-inline:auto;
+  opacity:0;
 }
 
 .service__title {
@@ -310,6 +312,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity:0;
   @include mq('md'){
     flex-direction:column;
     padding: 0 53px;
@@ -360,5 +363,21 @@
   font-size: 18px;
   @include mq('md'){
     font-size: 16px;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeUpAnima;
+  animation-duration: 1.5s;
+  animation-fill-mode:forwards;
+  opacity:0;
+}
+
+@keyframes fadeUpAnima {
+  from {
+    opacity:0;
+  }
+  to {
+    opacity:1;
   }
 }
