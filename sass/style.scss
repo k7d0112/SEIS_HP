@@ -139,16 +139,30 @@
   // background-image: url(../images/FV-pc.jpg);
   // background-repeat:no-repeat;
   // background-size:cover;
-  background: linear-gradient(45deg, #1B9195, #0DA654, #F1F6D8);
+  background: linear-gradient(45deg,#1B9195, #0DA654,#D9D6EB, #F1F6D8);
   background-size: 200% 200%;
   animation: bggradient 10s ease infinite;
   @include mq('md'){
     height: 551px;
     // background-image: url(../images/FV-sp.jpg);
+    background-size: 250% 250%;
+    animation: bggradient-small 15s ease infinite;
   }
 }
 
 @keyframes bggradient {
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes bggradient-small {
   0%{
     background-position: 0% 0%;
   }
